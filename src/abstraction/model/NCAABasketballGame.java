@@ -13,4 +13,28 @@ public class NCAABasketballGame extends Basketball
 		this.setTeamSizes(5);
 		this.setTeamNames("Duke vs. Kentucky");
 	}
+
+	
+	public double coolnessLevel()
+	{
+		return 0;
+	}
+
+	
+	public void coolAction(int numberOfTimes)
+	{
+		
+	}
+
+	
+	public int cost()
+	{
+		return 0;
+	}
+
+	
+	public void EthanBradberry(int numberOfTimes)
+	{
+		
+	}
 }
