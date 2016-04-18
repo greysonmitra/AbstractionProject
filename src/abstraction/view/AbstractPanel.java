@@ -20,6 +20,7 @@ public class AbstractPanel extends JPanel
 		displayArea = new JTextArea(10, 20);
 		sortButton = new JButton("Sort Interfaces");
 		
+		
 		setupPanel();
 		setupLayout();
 		setupListeners();
@@ -37,7 +38,10 @@ public class AbstractPanel extends JPanel
 	
 	public void setupLayout()
 	{
-		
+		baseLayout.putConstraint(SpringLayout.NORTH, displayArea, 40, SpringLayout.NORTH, this);
+		baseLayout.putConstraint(SpringLayout.WEST, displayArea, 99, SpringLayout.WEST, this);
+		baseLayout.putConstraint(SpringLayout.NORTH, sortButton, 20, SpringLayout.SOUTH, displayArea);
+		baseLayout.putConstraint(SpringLayout.WEST, sortButton, 10, SpringLayout.WEST, this);
 	}
 	
 	public void setupListeners()
