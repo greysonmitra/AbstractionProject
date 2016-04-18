@@ -11,23 +11,17 @@ public class ChapterBook extends Book
 
 
 	public ChapterBook()
-
 	{
-
-	this.setBookName("The Hunger Games");
-	this.setMainCharacter("Katniss");
-	this.setYearWritten(2008);
-
+		this.setBookName("The Hunger Games");
+		this.setMainCharacter("Katniss");
+		this.setYearWritten(2008);
 	}
 
 
 
 	public double coolnessLevel()
-
 	{
-
-	return 5;
-
+		return 5;
 	}
 
 
@@ -47,9 +41,7 @@ public class ChapterBook extends Book
 
 	public int cost()
 	{
-
-	return 15;
-
+		return 15;
 	}
 
 

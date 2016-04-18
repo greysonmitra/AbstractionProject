@@ -1,7 +1,6 @@
 package abstraction.model;
 
 import javax.swing.JOptionPane;
-import ctec.controller.SportsController;
 
 public class BasketballZach extends Sports
 {
@@ -19,12 +18,6 @@ public class BasketballZach extends Sports
 
 	}
 
-
-	public BasketballZach(SportsController baseController)
-	{
-			
-
-	}
 
 	public double coolnessLevel()
 	{

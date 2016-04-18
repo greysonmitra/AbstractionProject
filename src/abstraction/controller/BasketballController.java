@@ -2,15 +2,29 @@ package abstraction.controller;
 
 import java.util.ArrayList;
 import abstraction.model.*;
+import abstraction.view.*;
 
 public class BasketballController
 {
+	private AbstractFrame baseFrame;
+	private NBABasketballGame myNBAGame;
+	private NCAABasketballGame myNCAAGame;
+	private BasketballZach mySport;
+	private NissanCar myCar;
+	private ChapterBook myBook;
 	
 	public BasketballController()
 	{
-		//build all model components
+		//build all model components   DONE?
 		makeCoolList();
-		//build view
+		//build view                   DONE?
+		
+		myNCAAGame = new NCAABasketballGame();
+		myNBAGame = new NBABasketballGame();
+		mySport = new BasketballZach();
+		myCar = new NissanCar();
+		myCar = new NissanCar();
+		baseFrame = new AbstractFrame(this);
 	}
 	private ArrayList<CoolThing> coolThings;
 	
@@ -23,7 +37,9 @@ public class BasketballController
 	{
 		coolThings.add(new NBABasketballGame());
 		coolThings.add(new NCAABasketballGame());
-		// Keep going...
+		coolThings.add(new ChapterBook());
+		coolThings.add(new NissanCar());
+		coolThings.add(new BasketballZach());
 	}
 	
 	public void start()
