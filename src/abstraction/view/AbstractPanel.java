@@ -1,9 +1,14 @@
 package abstraction.view;
 
-import java.awt.*;
-import java.awt.Event.*;
+import java.awt.Color;
+import java.awt.Dimension;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
 import javax.swing.*;
-import abstraction.controller.*;
+
+import abstraction.controller.BasketballController;
+import abstraction.model.CoolThing;
 
 public class AbstractPanel extends JPanel 
 {
@@ -50,7 +55,14 @@ public class AbstractPanel extends JPanel
 		{
 			public void actionPerformed(ActionEvent click)
 			{
-				displayArea.setText("");
+				baseController.insertionSort();
+				String temp = "The sorted contents are: \n";
+				for(CoolThing current : baseController.getCoolThings())
+				{
+					temp += current.toString() + "\n";
+				}
+				displayArea.setText(temp);
+				displayArea.setText(baseController.showCoolLevels());
 			}
 		});
 	}

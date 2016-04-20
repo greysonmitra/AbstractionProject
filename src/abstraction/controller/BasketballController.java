@@ -15,6 +15,7 @@ public class BasketballController
 	
 	public BasketballController()
 	{
+		this.coolThings = new ArrayList<CoolThing>();
 		//build all model components   DONE?
 		makeCoolList();
 		//build view                   DONE?
@@ -28,9 +29,16 @@ public class BasketballController
 	}
 	private ArrayList<CoolThing> coolThings;
 	
+	
 	public String showCoolLevels()
 	{
-		return null;
+		String coolLevels = "";
+		for(CoolThing currentCool : coolThings)
+		{
+			coolLevels.concat("This is a " + currentCool.toString() + " and has a cool level of " + currentCool.coolnessLevel() + "\n");
+		}
+		
+		return coolLevels;
 	}
 	
 	private void makeCoolList()
@@ -94,4 +102,15 @@ public class BasketballController
 		
 		return position;
 	}
+	
+	public ArrayList<CoolThing> getCoolThings()
+	{
+		return coolThings;
+	}
+
+	public void setCoolThings(ArrayList<CoolThing> coolThings)
+	{
+		this.coolThings = coolThings;
+	}
+
 }
