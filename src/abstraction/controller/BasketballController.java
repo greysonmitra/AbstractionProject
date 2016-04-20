@@ -35,7 +35,7 @@ public class BasketballController
 		String coolLevels = "";
 		for(CoolThing currentCool : coolThings)
 		{
-			coolLevels.concat("This is a " + currentCool.toString() + " and has a cool level of " + currentCool.coolnessLevel() + "\n");
+			coolLevels += ("This is a " + currentCool.toString() + ", a cool level of " + currentCool.coolnessLevel()  + "\n");
 		}
 		
 		return coolLevels;

@@ -18,7 +18,7 @@ public class AbstractFrame extends JFrame
 	private void setupFrame()
 	{
 		this.setContentPane(basePanel); 
-		this.setSize(500,400); 			
+		this.setSize(800,400); 			
 		this.setTitle("Abstracts and Interfaces");
 		this.setResizable(false);       
 		this.setVisible(true);		    

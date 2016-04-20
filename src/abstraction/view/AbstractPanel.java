@@ -22,7 +22,7 @@ public class AbstractPanel extends JPanel
 		this.baseController = baseController;
 		
 		baseLayout = new SpringLayout();
-		displayArea = new JTextArea(10, 20);
+		displayArea = new JTextArea(10, 30);
 		sortButton = new JButton("Sort Interfaces");
 		
 		
